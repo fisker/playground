@@ -5,4 +5,4 @@ on:
 
 jobs:
   autofix:
-    uses: fisker/shared-workflows/.github/workflows/autofix.yml@main
+    uses: fisker/shared-workflows/autofix.yml@main
