@@ -10,4 +10,4 @@ jobs:
       - run: echo run
 
   fix:
-    uses: fisker/shared-workflows/.github/workflows/fix.yml@main
+    uses: fisker/shared-workflows/.github/workflows/autofix.yml@main
