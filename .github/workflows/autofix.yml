@@ -5,7 +5,4 @@ on:
 
 jobs:
   fix:
-    name: Run
-    runs-on: ubuntu-latest
-    steps:
-    - uses: fisker/shared-workflows/.github/workflows/fix.yml@main
+    uses: fisker/shared-workflows/.github/workflows/fix.yml@main
