@@ -4,23 +4,10 @@ on:
   pull_request:
 
 jobs:
-  fix:
-    name: Fix
+  debug:
     runs-on: ubuntu-latest
-    env:
-      YARN_ENABLE_IMMUTABLE_INSTALLS: false
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - run: echo run
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          cache: "yarn"
-
-      - name: Install Dependencies
-        run: yarn
-
-      - uses: autofix-ci/action@v1
-        with:
-          commit-message: "Apply automated changes"
+  fix:
+    uses: fisker/shared-workflows/.github/workflows/fix.yml@main
