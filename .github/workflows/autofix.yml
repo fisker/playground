@@ -1,13 +1,11 @@
+# Test Test reusable workflow - autofix https://github.com/fisker/shared-workflows/blob/main/.github/workflows/autofix.yml
 name: autofix.ci # needed to securely identify the workflow
 
 on:
   pull_request:
 
 jobs:
-  debug:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo run
-
   fix:
-    uses: fisker/shared-workflows/.github/workflows/fix.yml@main
+    if: github.repository == 'fisker/update'
+    name: Run automated fix
+    uses: fisker/shared-workflows/.github/workflows/autofix.yml@main
