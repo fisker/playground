@@ -10,10 +10,13 @@ console.log(
 
 
 
-'hello,' + 'world!'
+'hello, world!'
 
 
 
 
 
 )
+
+
+;[].forEach(x => console.log(x))
