@@ -1,4 +1,4 @@
-# https://github.com/fisker/shared-workflows/blob/main/.github/workflows/reusable-workflows/scheduled-task.yml
+# https://github.com/fisker/shared-workflows/blob/main/.github/workflows/scheduled-task.yml
 name: Test reusable workflow - scheduled-task
 
 on:
@@ -11,4 +11,4 @@ jobs:
   update:
     if: github.event_name != 'schedule' || github.repository == 'fisker/update'
     name: Run update
-    uses: fisker/shared-workflows/.github/workflows/reusable-workflows/scheduled-task.yml@main
+    uses: fisker/shared-workflows/.github/workflows/scheduled-task.yml@main
