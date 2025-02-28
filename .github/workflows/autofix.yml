@@ -1,0 +1,11 @@
+name: autofix.ci # needed to securely identify the workflow
+
+on:
+  pull_request:
+
+jobs:
+  fix:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+    - uses: fisker/shared-workflows/.github/workflows/fix.yml@main
