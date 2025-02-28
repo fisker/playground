@@ -1,10 +1,2 @@
-
-console.log(
-"Hello,"
-
-
-+ " world!"
-
-);
-
-[].forEach(x => console.log(x))
+console.log('Hello,' + ' world!')
+for (const x of []) console.log(x)
