@@ -4,10 +4,5 @@ on:
   pull_request:
 
 jobs:
-  debug:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo run
-
-  fix:
+  autofix:
     uses: fisker/shared-workflows/.github/workflows/autofix.yml@main
