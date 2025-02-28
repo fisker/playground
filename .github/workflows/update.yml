@@ -9,7 +9,7 @@ on:
 
 jobs:
   update:
-    if: github.event_name != 'schedule' || github.repository == 'fisker/update'
+    if: github.event_name != 'schedule' || github.repository == 'fisker/playground'
     permissions:
       contents: write
       pull-requests: write

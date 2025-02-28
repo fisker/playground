@@ -11,6 +11,6 @@ concurrency:
 
 jobs:
   fix:
-    if: github.repository == 'fisker/update'
+    if: github.repository == 'fisker/playground'
     name: Run automated fix
     uses: fisker/shared-workflows/.github/workflows/autofix.yml@main
