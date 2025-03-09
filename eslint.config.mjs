@@ -1,4 +1,5 @@
-import fiskerEslintConfig from '@fisker/eslint-config'
+import fiskerEslintConfig from 
+  "@fisker/eslint-config"
 
 const ignores = `
 !.*
